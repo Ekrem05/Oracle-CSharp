@@ -5,6 +5,9 @@ public class Car {
     private int doors;
     private boolean convertable;
 
+    public Car()
+    {this("Unknown", "Unknown", "Unknown",4,false);
+    }
     public Car(String make, String model, String color, int doors, boolean convertable) {
         this.make = make;
         this.model = model;
