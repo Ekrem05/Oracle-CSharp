@@ -9,5 +9,9 @@ public class Main {
 
         Car mySecondCar = new Car();
         mySecondCar.describeCar();
+
+        LPAStudent student = new LPAStudent("1","Ekrem",19);
+        System.out.println(student);
+        System.out.println(student.age());
     }
 }
