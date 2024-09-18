@@ -3,10 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        Car myCar = new Car("Benz", "C63",2020,"yellow",2,false);
-
-
-        System.out.println(myCar);
+        Vehicle tractor = new Vehicle("Ford", "W30",1936);
+        System.out.println(tractor);
         Car mySecondCar = new Car("Bentley","F40", 2023,"black",4,false);
         System.out.println(mySecondCar);
     }
