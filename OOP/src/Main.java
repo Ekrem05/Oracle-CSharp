@@ -1,17 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+    //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        Car myCar = new Car("Benz", "C63","yellow",2,false);
-        System.out.println(myCar.getMake());
-        myCar.describeCar();
+        Car myCar = new Car("Benz", "C63",2020,"yellow",2,false);
 
-        Car mySecondCar = new Car();
-        mySecondCar.describeCar();
 
-        LPAStudent student = new LPAStudent("1","Ekrem",19);
-        System.out.println(student);
-        System.out.println(student.age());
+        System.out.println(myCar);
+        Car mySecondCar = new Car("Bentley","F40", 2023,"black",4,false);
+        System.out.println(mySecondCar);
     }
 }
