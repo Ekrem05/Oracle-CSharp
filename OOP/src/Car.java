@@ -5,6 +5,18 @@ public class Car {
     private int doors;
     private boolean convertable;
 
+    public Car(String make, String model, String color, int doors, boolean convertable) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.doors = doors;
+        this.convertable = convertable;
+    }
+    public Car(String make, String model, String color) {
+        setMake(make);
+        this.model = model;
+        this.color = color;
+    }
     public void setMake(String make) {
         this.make = make;
     }
