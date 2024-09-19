@@ -12,6 +12,18 @@ public class Main {
                     \u2022 First Point
                         \u2022 Sub Point""";
        System.out.println(textBlock);
+       System.out.printf("Age: %d%n",35);
+       System.out.printf("Age: %.2f\n",35.43);
+
+        System.out.printf("Age: %6d\n",35);
+        System.out.printf("Age: %6d\n",356);
+        System.out.printf("Age: %6d\n",3577);
+        System.out.printf("Age: %6d\n",388866);
+
+        String formatted = String.format("Your age is: %d\n",65);
+        String second = "Format age: %d\n".formatted(51);
+        System.out.printf(formatted);
+        System.out.printf(second);
 
 
     }
