@@ -12,7 +12,7 @@ public class Main {
                 .filter(x->x%2==0)
                 .distinct()
                 .forEach(System.out::println);
-        
+
         //Basically you can perform operations on a collection functionally
     }
 }
