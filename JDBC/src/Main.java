@@ -11,11 +11,20 @@ public class Main {
 
             PreparedStatement stm = conn.prepareStatement("SELECT * FROM music.songs");
             ResultSet result = stm.executeQuery();
+            for(int i = 1; i<result.getMetaData().getColumnCount()+1; i++){
+                System.out.printf("%-25s ",result.getMetaData().getColumnLabel(i));
+            }
+            System.out.println();
             while(result.next()){
-                int id = result.getInt("song_id");
-                int track_number = result.getInt("track_number");
-                String title = result.getString("song_title");
-                System.out.printf("ID: %d     Track Number: %d     Title: %s\n", id, track_number, title);
+
+                for(int i = 1; i<result.getMetaData().getColumnCount()+1; i++){
+                    System.out.printf("%-25s ",result.getString(i));
+                }
+                System.out.println();
+//                int id = result.getInt("song_id");
+//                int track_number = result.getInt("track_number");
+//                String title = result.getString("song_title");
+//                System.out.printf("ID: %d     Track Number: %d     Title: %s\n", id, track_number, title);
             }
         }
         catch (SQLException e){
